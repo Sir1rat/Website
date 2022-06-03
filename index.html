@@ -20,12 +20,28 @@
 <body>
     <header>
         <div class="logo">Tim Jezek</div>
-        <nav>
+        <nav id:="mainNav">
             <ul>
             <li><a href="Exercises.html">Dont Click |</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li><li><a href="about.html">About |</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
                 <li><a href="kontakt.html">Contact |</a></li>
             </ul>
         </nav>
+
+        <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+        
+        <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
+        <nav id="hamburgerNav">
+          <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+          <!--  &times; stellt das X dar -->
+          <ul>
+            <li><a href="web.html">Home</a></li>
+          </ul>
+          <ul class="ul2">
+            <li class="list2"><a class="current" href="web.html">DE</a></li>
+            <li class="list2"><a href="">EN</a></li>
+          </ul>
+        </nav>
+
     </header>
     <div class="slider">
         <div class="slidertext">Welcome to this page!</div> 
@@ -72,6 +88,19 @@
         <br>
         <a href="mailto:tim@jeschis.ch">tim@jeschis.ch</a>
     </footer>
+
+    <!-- Java Script Funktion. 
+            Die Funktion "openNav()" wird ausgeführt, wenn man auf den Hamburger (☰) klickt, die Funktion verändert die Breite von der id "#hamburgernav" im CSS auf 100%.
+            Die Funktion "closeNav()" wird ausgeführt, wenn man auf das Close-Icon (x) klickt, die Funktion verändert die Breite von der id "#hamburgernav" im CSS auf 0%.
+        -->
+        <script>
+            function openNav() {
+               document.getElementById("hamburgerNav").style.width = "100%";
+            }
+            function closeNav() {
+               document.getElementById("hamburgerNav").style.width = "0%";
+              }
+          </script>
 </body>
 
 </html>
