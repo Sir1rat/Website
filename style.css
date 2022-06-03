@@ -230,3 +230,78 @@ footer a:hover {
     nav li{
         display: inline-block;
     }
+
+
+    nav#mainNav a,
+nav#hamburgerNav a {
+  font-family: "Dongle";
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+nav#mainNav a:hover,
+nav#hamburgerNav a:hover {
+    color: rgb(182, 182, 182);
+    transition: 1s;
+  }
+
+
+/* Hamburger Icon */
+#hamburgerIcon {
+  display: none; /* Das Icon wird nicht angezeigt */
+  font-size: 3em;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Hamburger Navigation */
+nav#hamburgerNav {
+  position: fixed;
+  height: 100%;
+  width: 0; /* Hat eine Breite von 0, wird also nicht angezeigt */
+  top: 0;
+  right: 0;
+  padding-top: 110px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background-color: #000000;
+}
+
+nav#hamburgerNav ul {
+  list-style: none;
+  line-height: 3;
+  font-size: 1.5em !important;
+}
+
+nav#hamburgerNav .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 55px;
+  font-size: 5em;
+}
+
+nav#hamburgerNav .closebtn:hover {
+  border: none;
+  padding: 0;
+}
+
+
+@media screen and (max-width: 950px) {
+  nav#mainNav ul {
+    display: none;
+  }
+  nav#langselection{
+    display: none;
+  }
+  #hamburgerIcon {
+    display: block;
+  }
+
+  main#content section{
+    flex-direction: column;}
+
+  main#content section.lefttoright{
+    flex-direction: column;
+  }
+}
