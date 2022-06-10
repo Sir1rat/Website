@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video 
 
 {
@@ -11,16 +10,71 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
     font-size: 1em;
     line-height: 1.5em;
     color: rgba(0, 0, 0, 1.0);
-    font-family: 'Roboto', sans-serif;
-    /*font-family: 'Roboto Slab', serif;*/
+    font-family: 'Poppins', sans-serif;
     font-weight: 200;
 }
 
 
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    color: #000000;
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #000000;
+    text-align: center;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15em;
+    color: #004d37;
+    font-weight: bold;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+    text-align: left;
+}
+
+p { 
+    margin: 0 0 40px 0;
+}
+
 header {
     width: calc(100% - 80px);
-    height: 30px;
-    padding: 40px 40px 40px 40px;
+    height: 40px;
+    padding: 40px 40px 30px 40px;
     background-color: #000000;
     display: flex;
     justify-content: space-between;
@@ -28,21 +82,33 @@ header {
 }
 
 .logo {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.25em;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    font-weight: 900;
     text-decoration: none;
     color: white;
+    margin-top: -10px;
 }
 
+.logoblack {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.75em;
+    font-weight: 900;
+    text-decoration: none;
+    color: #004d37;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
 .logo:hover{
-    color: #8a8a8a;
+    color: #195e4b ;
     transition: 1s;
 }
 
 nav {
     color: #FFFFFF;
-    font-size: 1.25em;
+    font-size: 1.15em;
     font-weight: 100;
 
 }
@@ -53,54 +119,15 @@ nav a {
 }
 
 nav a:hover {
-    color: #8a8a8a;
-    transition: 1s;
+    color: #6f9b8f;
+    transition: 0.5s;
 }
 
-.slider {
-    height: calc(100vh - 110px);
-    background: url("414982.jpg");
-    background-size: 100%;
-    background-position: top;
-    text-align: center;
-    background-repeat: no-repeat;
-}
-
-@media only screen and (max-width: 680px) {
-  .slider  {
-    height: calc(50vh - 110px);}
-  }
-
-.slidertext {
-    padding: 200px 0 0 0;
-    font-weight: 600;
-    font-size: 3em;
-    color: #ffffff;
-    text-shadow: 0 0 30px rgba(0,0,0,0.5);
-    font-family: 'Roboto Slab', serif;
-    letter-spacing: .1em;
-    color: rgb(241, 241, 241);
-    text-shadow: 0 0 5px rgb(204, 204, 204),
-                 0 0 10px rgb(219, 219, 219),
-                 0 0 20px gray,
-                 0 0 40px gray,
-                 0 0 60px gray,
-                 0 0 90px gray,
-                 0 0 120px gray,
-                 0 0 160px gray;
-}
-
-
-
-
-@media only screen and (max-width: 680px) {
-  .slidertext  {
-    padding: 100px 0 0 0;}
-  }
 
 main {
     width: 100%;
     color: #FFFFFF;
+    min-height: 800px;
 }
 
 section {
@@ -117,7 +144,14 @@ section {
 
 
 article {
-    width: 30%;
+    width: 100%;
+    padding-bottom: 25px;
+    margin: 0 10px 0 10px;
+}
+
+.article2  {
+    width: 50%;
+    padding-bottom: 25px;
 }
 
 @media only screen and (max-width: 680px) {
@@ -127,43 +161,17 @@ article {
 
 
 
-article img {
-    width: 100%;
-    margin: 0 0 40px 0;
-}
-
-
-
-h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5em;
-    color: #000000;
-    font-weight: 600;
-    margin: 0 0 40px 0;
-}
-
-p { 
-    margin: 0 0 40px 0;
-}
-
-
 footer {
-    margin: 40px 0 0 0;
     width: calc(100% - 80px);
     padding: 40px 40px 40px 40px;
     background-color: #000000;
     color: #FFFFFF;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Poppins', sans-serif;
+    text-align:center;
     font-size: 0.75em;
     font-weight: 400;
 }
 
-footer a {
-    font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
-    font-weight: 100;
-    text-decoration: none;
-}
 
 footer a:hover {
     color: #8a8a8a;
@@ -178,6 +186,7 @@ footer a:hover {
   #back{
       background-color: rgb(36, 36, 36);
   }
+
   .container {
     display: flex;
     justify-content: center;
@@ -185,105 +194,52 @@ footer a:hover {
     height: 75vh;
     width: 100vw;
   }
-  #apple,
-  #twitter,
-  #github,
-  #facebook {
-    font-size: 8em;
-    background-color: #18191f;
-    color: #fff;
-    box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
-      2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
-      inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
-      inset 2px 2px 10px #00000080;
-    border-radius: 29px;
-    padding: 11px 19px;
-    margin: 0 40px;
-    animation: animate 3s linear infinite;
-    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
-      0 0 200px #0072ff;
-  }
-  
-  @keyframes animate {
-    from {
-      filter: hue-rotate(0deg);
-    }
-    to {
-      filter: hue-rotate(360deg);
-    }
-  }
-  
-  .slider2 {
-    height: calc(100vh - 110px);
-    background: url("Jezek_Tim.jpg");
-    background-size: 75%;
-    background-position: top;
-    text-align: center;
-    
-}
 
-@media only screen and (max-width: 680px) {
-    .slider2  {
-      height: calc(50vh - 110px);}
-    }
-  
     nav li{
         display: inline-block;
     }
 
-
-    nav#mainNav a,
-nav#hamburgerNav a {
-  font-family: "Dongle";
-  text-decoration: none;
-  color: #eee;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-nav#mainNav a:hover,
-nav#hamburgerNav a:hover {
-    color: rgb(182, 182, 182);
-    transition: 1s;
-  }
-
-
 /* Hamburger Icon */
 #hamburgerIcon {
-  display: none; /* Das Icon wird nicht angezeigt */
-  font-size: 3em;
-  cursor: pointer;
-  color: #fff;
+    display: none; /* Das Icon wird nicht angezeigt */
+    font-size: 3em;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    top: -22px;
+    float: right;
 }
 
 /* Hamburger Navigation */
 nav#hamburgerNav {
-  position: fixed;
-  height: 100%;
-  width: 0; /* Hat eine Breite von 0, wird also nicht angezeigt */
-  top: 0;
-  right: 0;
-  padding-top: 110px;
-  overflow-x: hidden;
-  transition: 0.5s;
-  background-color: #000000;
+    position: fixed;
+    height: 100%;
+    width: 0; /* Hat eine Breite von 0, wird also nicht angezeigt */
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: #004d37;
+    padding-top: 110px;
 }
 
 nav#hamburgerNav ul {
-  list-style: none;
-  line-height: 3;
-  font-size: 1.5em !important;
+    list-style: none;
+    padding-left: 50px;
+    line-height: 3;
+    font-size: 1.25em !important;
 }
 
 nav#hamburgerNav .closebtn {
-  position: absolute;
-  top: 0px;
-  right: 55px;
-  font-size: 5em;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    font-size: 5em;
 }
 
 nav#hamburgerNav .closebtn:hover {
-  border: none;
-  padding: 0;
+    border: none;
+    padding: 0;
 }
 
 
@@ -304,4 +260,25 @@ nav#hamburgerNav .closebtn:hover {
   main#content section.lefttoright{
     flex-direction: column;
   }
+}
+
+form {
+    width: 100%;
+    background-color: #b4b7b4;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+img { 
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+#rakete {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
 }

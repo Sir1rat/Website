@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guitar Shop</title>
+    <meta name="description"
+        content="Diese Meta-Tags sollten Sie kennen! Mit HTML-Meta-Tags werden Informationen für Browser und Suchmaschinen codiert. Doch welche Angaben sind wirklich wichtig?" />
+    <meta name="keywords" content="Stichwort 1, Stichwort 2, Stichwort 3" />
+    <meta name="author" content="Tim Jezek & Sirirat Souk" />
+    <meta name="copyright" content="Tim Jezek & Sirirat Souk, Zürich" />
+    <meta name="robots" content="index,follow" />
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">MELODIG</div>
+        <nav id="mainNav">
+            <ul>
+            <li><a href="index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="shop.html">Shop</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="about.html">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="news.html">News</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="contact.html">Contact</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            </ul>
+        </nav>
+
+        <!-- Start Hamburger -->
+        <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+        <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
+        <nav id="hamburgerNav">
+            <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+            <!--  &times; stellt das X dar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="news.html">News</a></li>
+            </ul>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h6>NEW STORE OPENING IN ZÜRICH</h6>
+                <img src="Bilder/store.jpg">
+                <p>Our first store will be at Niederdorfstrasse 10, 8001 Zuerich, Switzerland. 
+                The grand opening will be held on the 1st July 2022 at 2PM. 
+                We would be beyond happy to see all your faces there too.</p>
+            </article>
+            <article>
+                <h6>FIRST WORKSHOP COMING SOON</h6>
+                <img src="Bilder/workshop.jpg">
+                <p>Stay tuned. More infos are coming soon.</p>
+            </article>
+        </section>
+    </main>
+    <!-- Form Start CSS-Framework  -->
+    <form>
+        <h3>SIGN UP TO GET THE LATEST ON SALES, NEWS RELEASES, AND MORE.</h3>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Your email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">SUBSCIRBE</button>
+    </form>
+    <footer>
+        Copyright © 2022 MELODIG
+    </footer>
+
+    <!-- Java Script Funktion. 
+            Die Funktion "openNav()" wird ausgeführt, wenn man auf den Hamburger (☰) klickt, die Funktion verändert die Breite von der id "#hamburgernav" im CSS auf 100%.
+            Die Funktion "closeNav()" wird ausgeführt, wenn man auf das Close-Icon (x) klickt, die Funktion verändert die Breite von der id "#hamburgernav" im CSS auf 0%.
+        -->
+        <script>
+            function openNav() {
+               document.getElementById("hamburgerNav").style.width = "100%";
+            }
+            function closeNav() {
+               document.getElementById("hamburgerNav").style.width = "0%";
+              }
+          </script>
+</body>
+
+</html>

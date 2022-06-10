@@ -6,87 +6,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Tim Jezek | Mediamatiker/EFZ</title>
+    <title>Guitar Shop</title>
     <meta name="description"
         content="Diese Meta-Tags sollten Sie kennen! Mit HTML-Meta-Tags werden Informationen für Browser und Suchmaschinen codiert. Doch welche Angaben sind wirklich wichtig?" />
     <meta name="keywords" content="Stichwort 1, Stichwort 2, Stichwort 3" />
-    <meta name="author" content="Tim Jezek, Zürich" />
-    <meta name="copyright" content="Tim Jezek, Zürich" />
+    <meta name="author" content="Tim Jezek & Sirirat Souk" />
+    <meta name="copyright" content="Tim Jezek & Sirirat Souk, Zürich" />
     <meta name="robots" content="index,follow" />
-    <link rel="shortcut icon" type="image/x-icon" href="Monogram-TJ-Logo-Design-by-Greenlines-Studios-580x386.jpg">
-</head>
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <!-- JavaScript Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
 
+</head>
 
 <body>
     <header>
-        <div class="logo">Tim Jezek</div>
-        <nav id:="mainNav">
+        <div class="logo">MELODIG</div>
+        <nav id="mainNav">
             <ul>
-            <li><a href="Exercises.html">Dont Click |</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li><li><a href="about.html">About |</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-                <li><a href="kontakt.html">Contact |</a></li>
+            <li><a href="index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="shop.html">Shop</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="about.html">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="news.html">News</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li><a href="contact.html">Contact</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
             </ul>
         </nav>
 
+        <!-- Start Hamburger -->
         <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
-        
         <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
         <nav id="hamburgerNav">
-          <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
-          <!--  &times; stellt das X dar -->
-          <ul>
-            <li><a href="web.html">Home</a></li>
-          </ul>
-          <ul class="ul2">
-            <li class="list2"><a class="current" href="web.html">DE</a></li>
-            <li class="list2"><a href="">EN</a></li>
-          </ul>
+            <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+            <!--  &times; stellt das X dar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="news.html">News</a></li>
+            </ul>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
-
     </header>
-    <div class="slider">
-        <div class="slidertext">Welcome to this page!</div> 
-    </div>
     <main>
+
+        <!-- carousel css-framwork 1 -->
+        <!-- <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="10000">
+                <img src="Bilder/Bild 1.jpg" class="d-block w-100" alt="bild1">
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <img src="Bilder/Bild 2.jpg" class="d-block w-100" alt="bild2">
+              </div>
+              <div class="carousel-item">
+                <img src="Bilder/Bild 3.jpg" class="d-block w-100" alt="bild3">
+              </div>
+              <div class="carousel-item">
+                <img src="Bilder/Bild 4.jpg" class="d-block w-100" alt="bild4">
+              </div>
+              <div class="carousel-item">
+                <img src="Bilder/Bild 5.jpg" class="d-block w-100" alt="bild5">
+              </div>
+            </div> -->
+
+            <!-- buttons carousel -->
+            <!-- <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div> -->
+
         <section> 
             <article>
-                <h2>Consectetuer adipiscing elit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <h1>WE ARE MELODIG </h1>
+                <h5>WELCOME</h5>
+                <h4>We are extremely glad to announce the new opening of our Guitar Store. <br>
+                We carry an extensive range of well-kept guitars that you will no longer 
+                find in any other store. We also organize various events for our collection. 
+                Not only that, but our highly qualified experts also take care of your 
+                favorite pieces in our certified atelier.</h4>
             </article>
-            <article>
-                <h2>Consectetuer adipiscing elit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </article>
-            <article>
-                <h2>Consectetuer adipiscing elit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-            </article>
-            
         </section>
 
-        
-        
-       
     </main>
+    <!-- Form Start CSS-Framework 2  -->
+    <form>
+        <h3>SIGN UP TO GET THE LATEST ON SALES, NEWS RELEASES, AND MORE.</h3>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Your email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">SUBSCIRBE</button>
+    </form>
     <footer>
-        Tim Jezek<br>
-        <a href="tel:0041767212101">+41 76 721 21 01</a>
-        <br>
-        <a href="mailto:tim@jeschis.ch">tim@jeschis.ch</a>
+        Copyright © 2022 MELODIG
     </footer>
 
     <!-- Java Script Funktion. 
