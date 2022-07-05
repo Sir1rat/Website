@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html {
   height: 100%;
   perspective: 1000px;
   transform-style: preserve-3d;
-  font-family: lato, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1{
-  font-family: 'Roboto';
+  font-family: 'Poppins', sans-serif;
   font-size: 80px !important;
   margin-bottom: 20px;
   padding-top: 5% !important;
@@ -16,11 +16,16 @@ h1{
 }
 
 h3{
-  font-family: 'Roboto';
+  font-family: 'Poppins', sans-serif;
   font-size: 50px !important;
   margin-bottom: 0px;
   color: black !important;}
 
+h5{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  margin-left: 5px;
+  color: black !important;}
 
 
 .white{
@@ -136,10 +141,6 @@ ul {
   border-bottom-color: #fff;
 }
 
-audio{
-  width: 500px !important;
-  margin: 30px;
-}
 .bd-placeholder-img.rounded-circle{
   object-fit: cover;
 }
@@ -151,7 +152,15 @@ div.strength-part{
 }
 
 .row{
-  padding-top: 15%;
+  margin: 5% 5% 5% 5%;
+}
+
+.frame {
+  background-color: darkgreen;
+  margin: 15px 15px 15px 15px;
 }
 
 
+img {
+  padding: 25px 25px 0px 25px;
+}
