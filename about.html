@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- googlefonts -->
-  <title>About</title>
+  <title>About Melodig</title>
 </head>
 <body>
 
@@ -28,22 +28,18 @@
     <a href="index.html" class="navbar-brand d-flex align-items-center">
       <h3>MELODIG</h3>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
-            aria-controls="navbarOffcanvasLg">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
-         aria-labelledby="navbarOffcanvasLgLabel">
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-          <li class="nav-item">
-            <h5><a class="nav-link me-3" href="about.html">About us</a></h5>
-          </li>
-          <li class="nav-item">
-            <h5><a class="nav-link" href="shop.html">Our shop</a></h5>
-          </li>
-        </ul>
-      </div>
+    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+      <li class="nav-item">
+        <h5><a class="nav-link me-3" href="about.html">About us</a></h5>
+      </li>
+      <li class="nav-item">
+        <h5><a class="nav-link" href="shop.html">Our shop</a></h5>
+      </li>
+      <li class="nav-item">
+        <h5><a class="nav-link" href="contact.html">Contact us</a></h5>
+      </li>
+    </ul>
+    </div>
     </div>
     </div>
   </nav>
@@ -52,10 +48,13 @@
 <section class="py-5 text-center container">
   <div class="row py-lg-5">
     <div class="col-lg-6 col-md-8 mx-auto img-cover">
-      <img src="img/rakete.svg" alt="SVG mit img laden" width="600" height="350" >
+
+      <!-- Multielement 1 "SVG" mit Anpassung-->
+      <div class="frameSVG">
+      <img class="rakete" src="img/rakete.svg" alt="Rakete">
+      </div>
       
       <h1>About us</h1>
-      <br>
       <br>
       <p>We are extremely glad to announce the new opening of our Guitar Store. <br>
         We carry an extensive range of well-kept guitars that you will no longer 
@@ -63,18 +62,14 @@
         Not only that, but our highly qualified experts also take care of your 
         favorite pieces in our certified atelier.</p>
     </div>
-
   </div>
 </section>
 
-
-<section class="text-center justify-content-center container">
-          <iframe width="964" height="542" src="https://www.youtube.com/embed/HyJ-wjv3YME" title="Gibson LG-3 (1955)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Multimedia-Element 2 "YT-Video"-->
+<section class="container">
+          <iframe width="100%" height="400px" src="https://www.youtube.com/embed/HyJ-wjv3YME" title="Gibson LG-3 (1955)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
-
-
-<div class="b-example-divider"></div>
 
 <div class="container">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
