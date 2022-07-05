@@ -1,94 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Guitar Shop</title>
-    <meta name="description"
-        content="Diese Meta-Tags sollten Sie kennen! Mit HTML-Meta-Tags werden Informationen für Browser und Suchmaschinen codiert. Doch welche Angaben sind wirklich wichtig?" />
-    <meta name="keywords" content="Stichwort 1, Stichwort 2, Stichwort 3" />
-    <meta name="author" content="Tim Jezek & Sirirat Souk" />
-    <meta name="copyright" content="Tim Jezek & Sirirat Souk, Zürich" />
-    <meta name="robots" content="index,follow" />
-    <!-- CSS only -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
-    <!-- JavaScript Bundle with Popper -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 
 </head>
 
+
 <body>
-    <header>
-        <div class="logo">MELODIG</div>
-        <nav id="mainNav">
-            <ul>
-            <li><a href="index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-            <li><a href="shop.html">Shop</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-            <li><a href="about.html">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-            <li><a href="news.html">News</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-            <li><a href="contact.html">Contact</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-            </ul>
-        </nav>
+<header>
+  <nav class="navbar navbar-expand-sm bg-light sticky-top p-3">
+    <a href="index.html" class="navbar-brand d-flex align-items-center">
+      <h3>MELODIG</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
+            aria-controls="navbarOffcanvasLg">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+         aria-labelledby="navbarOffcanvasLgLabel">
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+          <li class="nav-item">
+            <h5><a class="nav-link me-3" href="about.html">About us</a></h5>
+          </li>
+          <li class="nav-item">
+            <h5><a class="nav-link" href="shop.html">Our shop</a></h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+</header>
+  <main>
 
-        <!-- Start Hamburger -->
-        <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
-        <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
-        <nav id="hamburgerNav">
-            <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
-            <!--  &times; stellt das X dar -->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-            </ul>
-            <ul>
-                <li><a href="shop.html">Shop</a></li>
-            </ul>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-            <ul>
-                <li><a href="news.html">News</a></li>
-            </ul>
-            <ul>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <article>
-            <h3>COMING SOON</h3>
-            <img src="bilder/rakete.svg" alt="rakete" id="rakete">
-            </article>
-        </section>
-    </main>
-    <!-- Form Start CSS-Framework  -->
-    <form>
-        <h3>SIGN UP TO GET THE LATEST ON SALES, NEWS RELEASES, AND MORE.</h3>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Your email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-        <button type="submit" class="btn btn-primary">SUBSCIRBE</button>
-    </form>
-    <footer>
-        Copyright © 2022 MELODIG
-    </footer>
 
-    <!-- Java Script Funktion. 
-            Die Funktion "openNav()" wird ausgeführt, wenn man auf den Hamburger (☰) klickt, die Funktion verändert die Breite von der id "#hamburgernav" im CSS auf 100%.
-            Die Funktion "closeNav()" wird ausgeführt, wenn man auf das Close-Icon (x) klickt, die Funktion verändert die Breite von der id "#hamburgernav" im CSS auf 0%.
-        -->
-        <script>
-            function openNav() {
-               document.getElementById("hamburgerNav").style.width = "100%";
-            }
-            function closeNav() {
-               document.getElementById("hamburgerNav").style.width = "0%";
-              }
-          </script>
+
+
+  <!-- Gallery -->
+  <div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+
+        src="img/Bild%201.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+
+      <img
+        src="img/Bild%202.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="img/Bild%203.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+      />
+
+      <img
+        src="img/Bild%204.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="img/Bild%205.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+
+      <img
+        src="img/Bild%206.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Yosemite National Park"
+      />
+    </div>
+  </div>
+  </main>
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-muted">&copy; 2022 MELODIG, Inc</span>
+    </div>
+  </footer>
+</div>
+
 </body>
-
 </html>
