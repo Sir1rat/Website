@@ -135,13 +135,13 @@ ul {
 /*
    * Anpassung SVG
    */
-.rakete {
-  width: 170px;
+.frameSVG {
+  border: 2px solid #004d37;
+  border-radius: 35%;
 }
 
-.frameSVG {
-  border-radius: 35%;
-  border: 2px solid #004d37;
+.rakete{
+  width: 170px;
 }
 
 .Introduction {
@@ -153,6 +153,9 @@ ul {
   background-color: #004d37;
 }
 
+/*
+   * Bildgallerie
+   */
 .frame {
   padding: 10px 10px 50px 10px;
   background-color: #004d37;
