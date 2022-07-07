@@ -132,19 +132,16 @@ ul {
   margin-top: 60px;
 }
 
-
+/*
+   * Anpassung SVG
+   */
 .rakete {
   width: 170px;
 }
 
-/*
-   * Anpassung SVG
-   */
 .frameSVG {
   border-radius: 35%;
   border: 2px solid #004d37;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .Introduction {
@@ -157,7 +154,7 @@ ul {
 }
 
 .frame {
-  padding: 10px 10px 30px 10px;
+  padding: 10px 10px 50px 10px;
   background-color: #004d37;
   margin-bottom: 10px;
   margin-left: 25px;
